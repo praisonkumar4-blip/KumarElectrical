@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Portal Login | Kumar Electrical Contractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="auth-wrap">
+        <aside class="auth-side"><a class="brand" href="index.html"><span class="brand-mark">⚡</span><span
+                    class="brand-name">KUMAR ELECTRICAL<small>CONTRACTOR & SERVICES</small></span></a>
+            <div class="auth-copy">
+                <div class="eyebrow">FIELDWORK, CONNECTED</div>
+                <h1>One place for your <span style="color:var(--yellow)">entire team.</span></h1>
+                <p>Attendance, worksite assignments and payroll information in one secure workflow.</p>
+            </div>
+            <p style="font-size:.8rem;color:#8fa0ba;position:relative;z-index:1">Frontend demonstration • Authentication
+                is not production-secure</p>
+        </aside>
+        <section class="auth-main">
+            <form class="auth-form" id="loginForm"><a href="index.html" style="color:var(--muted);font-size:.85rem">←
+                    Back to company website</a>
+                <h2 style="margin-top:28px">Welcome back</h2>
+                <p>Sign in to your company portal.</p>
+                <div class="field"><label for="username">Employee ID or username</label><input id="username"
+                        autocomplete="username" required placeholder="e.g. ADMIN or EMP001"></div>
+                <div class="field"><label for="password">Password</label>
+                    <div class="input-row"><input id="password" type="password" autocomplete="current-password" required
+                            placeholder="Enter password"><button type="button" class="btn ghost"
+                            id="togglePassword">Show</button></div>
+                </div><label class="checkline"><input type="checkbox" id="rememberMe"> Remember this demo login on this
+                    device</label><button class="btn full" style="margin-top:22px" type="submit" id="loginButton">Sign
+                    in securely ↗</button>
+                <div class="demo-box"><strong>Demo accounts</strong><br>Admin: <code>ADMIN</code> /
+                    <code>admin123</code><br>Employee: <code>EMP001</code> / <code>emp123</code><br><span
+                        class="hint">Demo credentials only. Never use these in production.</span></div>
+                <div id="loginMessage" class="hint" style="margin-top:14px" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+    <div class="toast-region" id="toastRegion"></div>
+    <script src="app.js"></script>
+    <script src="api.js"></script>
+</body>
+
+</html>
