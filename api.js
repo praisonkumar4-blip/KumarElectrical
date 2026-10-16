@@ -1,5 +1,5 @@
 /* API client for Kumar Electrical Contractor. Configure API_CONFIG.baseUrl for deployment. */
-const API_CONFIG = { baseUrl: 'https://springbootfix.onrender.com', mode: 'backend' };
+const API_CONFIG = { baseUrl: 'https://springbootfix.onrender.com/api/health', mode: 'backend' };
 const ApiLoading = (() => {
   let pending = 0, overlay, startup = false;
   function ensure() { if (overlay || !document.body) return; overlay = document.createElement('div'); overlay.id = 'apiLoadingOverlay'; overlay.className = 'api-loading-overlay'; overlay.setAttribute('role', 'status'); overlay.setAttribute('aria-live', 'polite'); overlay.innerHTML = '<div class="api-loader-card"><div class="api-loader-mark">⚡</div><div class="api-loader-title">Loading company data</div><div class="api-loader-message" id="apiLoadingMessage">Connecting to the server…</div><div class="api-loader-track"><span></span></div><div class="api-loader-foot">KUMAR ELECTRICAL CONTRACTOR</div></div>'; document.body.appendChild(overlay); }
